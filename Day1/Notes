@@ -1,0 +1,71 @@
+## **Understand AWS Pricing Models**
+
+### 1. **On-Demand Instances**
+
+- **Pay only for what you use** — no upfront cost or long-term commitment.
+- **Billing:** Per second or per hour (depending on the service).
+- **Best for:**
+    - Short-term workloads
+    - Unpredictable usage patterns
+    - Development or testing environments
+- **Example:**
+    - EC2 On-Demand instance — pay hourly for instance runtime.
+
+
+### 2. **Reserved Instances (RIs)**
+
+- **Commit** to a specific instance type in a region for **1 or 3 years**.
+- Offers **up to 75% discount** compared to On-Demand pricing.
+- **Payment options:**
+  - All Upfront
+  - Partial Upfront
+  - No Upfront
+- **Best for:**
+  - Predictable workloads
+  - Long-running applications (e.g., databases, web servers)
+
+
+### 3. **Savings Plans**
+
+- A **flexible alternative** to Reserved Instances.
+- Commit to a **consistent spend ($/hour)** for 1 or 3 years.
+- Automatically applies discounts to **any eligible service** (e.g., EC2, Fargate, Lambda).
+- **Best for:**
+  - Workloads with variable instance types or regions
+  - Users wanting long-term savings with flexibility
+
+
+### 4. **Spot Instances**
+
+- Purchase **unused EC2 capacity** at **up to 90% discount** compared to On-Demand.
+- Can be **terminated anytime** if AWS needs the capacity.
+- **Best for:**
+  - Fault-tolerant and flexible workloads (e.g., batch processing, CI/CD, big data analysis)
+
+**Note:** Not ideal for critical or time-sensitive tasks.
+
+
+### 5. **Dedicated Hosts / Dedicated Instances**
+
+- **Dedicated Host:** Physical server fully allocated to you.
+- **Dedicated Instance:** Runs on hardware dedicated to a single customer but managed by AWS.
+- **Best for:**
+  - Compliance requirements
+  - Software licensing needs (e.g., BYOL – Bring Your Own License)
+
+
+## ⚙️ **Other Cost Factors**
+
+- **Storage (S3, EBS, Glacier):** Pay for the amount of data stored + requests + data transfer.
+- **Data Transfer:** Free *into* AWS, but outbound data incurs cost.
+- **Support Plans:** Basic (free) to Enterprise-level (paid).
+- **Additional Services:** Each AWS service (like RDS, Lambda, CloudFront) has its own pricing model.
+
+
+## 🧾 **Tip: Use AWS Pricing Calculator**
+
+🔗 [https://calculator.aws](https://calculator.aws)
+Estimate costs before deployment based on your resource usage.
+
+
+
